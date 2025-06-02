@@ -7,6 +7,7 @@ from std_srvs.srv import SetBool
 
 from odrive_projectile_srv.srv import SetVelocities
 
+import requests
 
 class VelocityTriggerController(Node):
     def __init__(self):
@@ -43,7 +44,7 @@ class VelocityTriggerController(Node):
         else:
             msg.data = [0.0, 0.0]
             self.publisher.publish(msg)
-            self.get_logger().info(f'Stopped Arm: {self.velocities}')
+            self.get_logger().info(f'Not Active Arm: {self.velocities}')
 
     def active_callback(self, request, response):
         self.active = request.data
@@ -52,15 +53,16 @@ class VelocityTriggerController(Node):
         return response
 
     def release_callback(self, request, response):
-        self.released = request.data
+        esp32_ip = "http://10.0.0.169/toggle"  
 
-        # Publish the trigger signal immediately when released is True
-        if self.released:
-            trigger_msg = Bool()
-            trigger_msg.data = True
-            self.release_publisher.publish(trigger_msg)
-            self.get_logger().info('Published release trigger signal.')
+        try:
+            self.released = True
 
+            http_response  = requests.get(esp32_ip, timeout=2)
+            self.get_logger().info(f"Toggled switch, ESP32 responded: {http_response.text}")
+        except Exception as e:
+            self.get_logger().error(f"Failed to contact ESP32: {e}")
+            self.released = False
         response.success = True
         response.message = "Released a one-shot command" if self.released else "Release canceled"
         return response

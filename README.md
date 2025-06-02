@@ -38,9 +38,9 @@ ros2 service call /active_vel std_srvs/srv/SetBool "{data: true}"
 ros2 service call /active_vel std_srvs/srv/SetBool "{data: false}"
 
 
-#Send a release signal and stop messages
-ros2 service call /release std_srvs/srv/SetBool "{data: true}"
-ros2 service call /release std_srvs/srv/SetBool "{data: false}"
+#Send a release toggel signal
+
+ros2 service call /release std_srvs/srv/SetBool
 
 
 Validated Two Nodes!
