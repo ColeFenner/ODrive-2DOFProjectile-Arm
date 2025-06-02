@@ -8,6 +8,8 @@ ros_odrive
 Currently The Odrive_ros2_control included package does not build properly, so:
 -----------------------
 
+source install/setup.bash
+
 colcon build --packages-select odrive_can odrive_projectile odrive_projectile_srv 
 
 or

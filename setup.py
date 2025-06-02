@@ -24,6 +24,7 @@ setup(
         'console_scripts': [
             'dual_velocity = odrive_projectile.dual_odrive_velocity_control:main',
             'projectile_service = odrive_projectile.velocity_trigger_controller:main',
+            'trigger = odrive_projectile.trigger_esp32:main'
         ],
     },
 )
