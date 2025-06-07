@@ -11,6 +11,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/odrive_projectile_launch.py']),
+        ('share/' + package_name + '/launch', ['launch/example_velocity_launch.py']),
+
 
     ],
     install_requires=['setuptools'],
@@ -24,7 +26,8 @@ setup(
         'console_scripts': [
             'dual_velocity = odrive_projectile.dual_odrive_velocity_control:main',
             'projectile_service = odrive_projectile.velocity_trigger_controller:main',
-            'trigger = odrive_projectile.trigger_esp32:main'
+            'trigger = odrive_projectile.trigger_esp32:main',
+            'dual_velocity_input = odrive_projectile.example_velocity_input:main',
         ],
     },
 )

@@ -11,8 +11,8 @@ def generate_launch_description():
         ),
         Node(
             package='odrive_projectile',
-            executable='projectile_service',
-            name='projectile_service_node',
+            executable='dual_velocity_input',
+            name='dual_velocity_input_node',
             output='screen'
         ),
         Node(
