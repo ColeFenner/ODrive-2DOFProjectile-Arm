@@ -12,10 +12,9 @@ Required Package:
 - ROS2 >= Jazzy
 
 # Software Setup
+Clone this repository and the [ros_odrive](https://github.com/odriverobotics/ros_odrive) package into your workspace
 
-Clone this repository and the [ros_odrive](https://github.com/odriverobotics/ros_odrive) package into your worksapce
-
-For more infomation in genreal Odrive ROS2 CAN control, refer to offical documentation: [ROS2 CAN Package](https://docs.odriverobotics.com/v/latest/guides/ros-package.html)
+For more information in general Odrive ROS2 CAN control, refer to official documentation: [ROS2 CAN Package](https://docs.odriverobotics.com/v/latest/guides/ros-package.html)
 
 -----------------------
 As the odrive_ros2_control package in ros_drive does not build properly with this ROS2 version, we build what is required:
