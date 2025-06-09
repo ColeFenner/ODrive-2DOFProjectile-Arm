@@ -3,7 +3,7 @@
 <package format="3">
   <name>odrive_projectile</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Interface with odrive_node to simplify inputs to velocity group commands with service calls</description>
   <maintainer email="fennerco@oregonstate.edu">fennerco</maintainer>
   <license>TBSD-3-Clause</license>
 
