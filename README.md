@@ -50,7 +50,7 @@ ros2 service call /set_velocities odrive_projectile_srv/srv/SetVelocities "{velo
 ros2 service call /active_vel std_srvs/srv/SetBool "{data: true}"
 ros2 service call /active_vel std_srvs/srv/SetBool "{data: false}"
 ```
-## Send a release toggel signal:
+## Send a release toggle signal:
 ```
 ros2 service call /release std_srvs/srv/SetBool
 ```
