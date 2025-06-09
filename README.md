@@ -13,7 +13,7 @@ Required Package:
 
 # Software Setup
 
-Clone this reposity and the [ros_odrive](https://github.com/odriverobotics/ros_odrive) package into your worksapce
+Clone this repository and the [ros_odrive](https://github.com/odriverobotics/ros_odrive) package into your worksapce
 
 For more infomation in genreal Odrive ROS2 CAN control, refer to offical documentation: [ROS2 CAN Package](https://docs.odriverobotics.com/v/latest/guides/ros-package.html)
 
