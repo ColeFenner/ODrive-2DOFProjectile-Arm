@@ -14,6 +14,8 @@ Required Package:
 # Software Setup
 Clone this repository and the [ros_odrive](https://github.com/odriverobotics/ros_odrive) package into your workspace
 
+Extract out the odrive_projectile_srv zip file in the odrive_projectile package into your package directory
+
 For more information in general Odrive ROS2 CAN control, refer to official documentation: [ROS2 CAN Package](https://docs.odriverobotics.com/v/latest/guides/ros-package.html)
 
 -----------------------
