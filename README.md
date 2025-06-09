@@ -1,8 +1,10 @@
------------------------
-Required Packages:
------------------------
+# ROS2 Package for Control of Two ODrive Motors and an ESP32 Trigger
 
-ros_odrive
+This reposity builds upon [ros_odrive](https://github.com/odriverobotics/ros_odrive) package to implement control of two odrive motor controllers ulitizing the odrive_node. 
+
+##Required Package:
+
+- [ros_odrive](https://github.com/odriverobotics/ros_odrive)
 
 -----------------------
 Currently The Odrive_ros2_control included package does not build properly, so:
