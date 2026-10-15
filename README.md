@@ -1,6 +1,6 @@
 # ROS2 Package for Control of Two ODrive Motors and an ESP32 Trigger
 
-This reposity builds upon [ros_odrive](https://github.com/odriverobotics/ros_odrive) package to implement control of two odrive motor controllers ulitizing the odrive_node. This system in robotic arm apart of Oregon State's LRAM Lab under Ross Hatton
+This reposity builds upon [ros_odrive](https://github.com/odriverobotics/ros_odrive) package to implement control of two odrive motor controllers ulitizing the odrive_node. This system is a robotic arm apart of Oregon State's LRAM Lab under Ross Hatton
 
 Required Package:
 
